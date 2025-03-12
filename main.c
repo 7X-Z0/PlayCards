@@ -49,28 +49,24 @@ else{ //even card
     }
 
 }
-• Print the cards and accumulate values for each hand
+// Print the cards and accumulate values for each hand
 printf("\nHand1: \n");
 for(i=0; i<5; i++) play1 += PrintCard(hand1, i);
 printf("Total for Hand1 is: %d\n", play1);
 printf("\nHand2: \n");
 for(i=0; i<5; i++) play2 += PrintCard(hand2, i);
 printf("Total for Hand2 is: %d\n", play2);
-• Then print out the winner or if there is a tie
-if(play1 == play2)
-{
-printf("\tThey are Tied!, deal again\n");
+// Then print out the winner or if there is a tie
+if(play1 == play2){
+    printf("\tThey are Tied!, deal again\n");
 }
-else
-{
-if(play1>play2)
-{
-printf("\tHand1 is the winner!\n");
+else{
+    if(play1>play2){
+    printf("\tHand1 is the winner!\n");
 }
-else
-{
-printf("\tHand2 is the winner!\n");
-}
+else{
+    printf("\tHand2 is the winner!\n");
+    }
 }
 
 
